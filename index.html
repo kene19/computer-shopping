@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAT Computers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/vaakash/socializer@f4c4e9/css/socializer.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+
+</head>
+
+<body>
+
+    <div class="continer">
+        <div class="leftbox">
+            <div class="logo">
+                <img src="photo/natcom.jpg" alt="" class="ima">
+
+                <div class="NATcom">
+
+                </div>
+
+                <marquee behavior="smooths" direction="left" class="NAT">
+
+                    <h2>NAT Computers</h4>
+
+                </marquee>
+
+            </div>
+            <div class="menu">
+
+            </div>
+
+            <div class="fliter">
+                <div style="text-align: left; width: 100%;margin-bottom: 10px; color: aliceblue; display: flex;">
+                    <h3 style="margin:0px 10px; ;">Fliter</h3>
+                </div>
+                <button class="btnkanu" onclick="filterprod('all')">All</button>
+                <button class="btnkanu" onclick="filterprod('low_price')">Low_price</button>
+                <button class="btnkanu" onclick="filterprod('medium_price')">Medium_price</button>
+                <button class="btnkanu" onclick="filterprod('higer_price')"> Higer_price </button>
+            </div>
+
+            <div class="foot">
+                <div style="width: 95%;">
+                    <div class="soc">
+
+                        <div class="socializer a sr-32px sr-circle sr-opacity sr-icon-white sr-pad" id="iconf"><span
+                                class="sr-email"><a href="mailto:mankanu54@gmail.com" target="_blank" title="Email"><i
+                                        class="fa fa-envelope"></i></a></span><span class="sr-telegram"><a
+                                    href="https:/t.me/Gunners389" target="_blank" title="Telegram"><i
+                                        class="fab fa-telegram-plane"></i></a></span><span class="sr-github"><a
+                                    href="https://github.com/kene19" target="_blank" title="Github"><i
+                                        class="fab fa-github"></i></a></span><span class="sr-linkedin"><a
+                                    href="https://www.linkedin.com/in/keneriyan-alemu-150abb2b7" target="_blank"
+                                    title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></span></div>
+
+                    </div>
+                </div>
+                <br>
+                <div class="Address" style="width: 90%;">
+
+                    <h3 style="text-align: center;"> Address</h3>
+                    <p style="font-size: 12px; font-weight: 100; color: rgba(218, 211, 211, 0.926);">Bole Medhaniyale
+                        Morning Star Building 1st Floor 12B No</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="leftboxone"></div>
+        <div class="leftboxone1">
+            <img src="photo/natcom.jpg" alt="" class="ima">
+            <div class="NATcom"></div>
+            <marquee behavior="smooths" direction="left" class="NAT">
+
+                <h2>NAT Computers</h4>
+            </marquee>
+
+        </div>
+
+        <div class="gon">
+            <div class="gon1">
+
+                <div class="group">
+                    <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                        <g>
+                            <path
+                                d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                            </path>
+                        </g>
+                    </svg>
+                    <input placeholder="Search products..." type="search" class="input" id="searchbar" onkeyup="se()">
+                </div>
+                <!-- <input type="search" id="searchbar" placeholder="Search products..." onkeyup="se()"> -->
+            </div>
+            <div class="gon2">
+                <div>
+                    <button class="fill">Fliter</button>
+                </div>
+                <img src="photo/cart.png" alt="cart_png" width="20px" height="20px">
+                <img src="photo/notification.png" alt="cart_png" width="20px" height="20px">
+                <img src="photo/dark.png" alt="" id="icon" width="20px" height="20px">
+
+            </div>
+            <div class="phonefill">
+                <div style="width: 80%;display: flex;">
+                    <button class="btnkanu" onclick="filterprod('all')">All</button>
+                    <button class="btnkanu" onclick="filterprod('low_price')">Low_price</button>
+                    <button class="btnkanu" onclick="filterprod('medium_price')">Medium_price</button>
+                    <button class="btnkanu" onclick="filterprod('higer_price')"> Higer_price </button>
+                </div>
+            </div>
+        </div>
+        <div id="show">
+
+        </div>
+        <div class="phonefoot">
+            <div style="width: 95%;">
+                <div class="soc">
+
+                    <div class="socializer a sr-32px sr-circle sr-opacity sr-icon-white sr-pad" id="iconf"><span
+                            class="sr-email"><a href="mailto:mankanu54@gmail.com" target="_blank" title="Email"><i
+                                    class="fa fa-envelope"></i></a></span><span class="sr-telegram"><a
+                                href="https:/t.me/Gunners389" target="_blank" title="Telegram"><i
+                                    class="fab fa-telegram-plane"></i></a></span><span class="sr-github"><a
+                                href="https://github.com/kene19" target="_blank" title="Github"><i
+                                    class="fab fa-github"></i></a></span><span class="sr-linkedin"><a
+                                href="https://www.linkedin.com/in/keneriyan-alemu-150abb2b7" target="_blank"
+                                title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></span></div>
+
+                </div>
+            </div>
+            <br>
+            <div class="Address" style="width: 90%;">
+                <h3 style="text-align: center;color: #fff;font-size: 13px;"><span></span> Address</h3>
+                <p style="font-size: 12px; font-weight: 100; color: rgba(218, 211, 211, 0.926);text-align: center;">
+                    Bole Medhaniyale Morning Star Building 1st Floor No 12B </p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+
+    <script>
+
+        let icon = document.getElementById("icon");
+
+        icon.onclick = function () {
+            document.body.classList.toggle("dark_theme")
+            if (document.body.classList.contains("dark_theme")) {
+                icon.src = "photo/sun.png"
+            } else {
+                icon.src = "photo/dark.png"
+            }
+
+        }
+
+        let fill = document.querySelector(".fill")
+
+        fill.onclick = function () {
+            let phonefill = document.querySelector(".phonefill")
+            let gon = document.querySelector(".gon")
+
+            phonefill.classList.toggle("phonefilladd")
+            gon.classList.toggle("gonadd")
+            fill.classList.toggle("filladd")
+
+        }
+    </script>
+</body>
+
+</html>
