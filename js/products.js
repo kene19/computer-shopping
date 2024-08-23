@@ -7,7 +7,7 @@ export let kanu = [
         prvprice:80000,
         dataa:"DELL Inspiron ",
         ram:"8 gb",
-        cpu:"CORE i5 7th Gen"
+        cpu:"CORE i7 11th Gen"
         
     }, {
         Name: "DELL Precision",
@@ -17,7 +17,7 @@ export let kanu = [
         prvprice:85000,
         dataa:"DELL Inspiron ",
         ram:"8 gb",
-        cpu:"CORE i5 7th Gen"
+        cpu:"CORE i7 12th Gen"
     }
     , {
         Name: "MSK KATANA",
@@ -25,8 +25,8 @@ export let kanu = [
         Price: 155000,
         category: "higer_price",
         prvprice:170000,
-        dataa:"DELL Inspiron ",
-        ram:"8 gb",
+        dataa:"Gameing pc",
+        ram:"16gb",
         cpu:"CORE i5 7th Gen"
     }
     , {
@@ -35,7 +35,7 @@ export let kanu = [
         Price: 57000,
         category: "medium_price",
         prvprice:60000,
-        dataa:"DELL Inspiron ",
+        dataa:"work ",
         ram:"8 gb",
         cpu:"CORE i5 7th Gen"
     }, {
@@ -45,7 +45,7 @@ export let kanu = [
         category: "low_price",
         prvprice:16000,
         dataa:"DELL Inspiron ",
-        ram:"8 gb",
+        ram:"4 gb",
         cpu:"CORE i5 7th Gen"
     }
     , {
@@ -55,8 +55,8 @@ export let kanu = [
         category: "medium_price",
         prvprice:50000,
         dataa:"DELL Inspiron ",
-        ram:"8 gb",
-        cpu:"CORE i5 7th Gen"
+        ram:"8gb",
+        cpu:"CORE i5 10th Gen"
     }
     , {
         Name: "OMEN",
@@ -65,8 +65,8 @@ export let kanu = [
         category: "higer_price",
         prvprice:90000,
         dataa:"DELL Inspiron ",
-        ram:"8 gb",
-        cpu:"CORE i5 7th Gen"
+        ram:"16gb",
+        cpu:"CORE i7 12th Gen"
     }
     , {
         Name: "MSI RAIDER GE76",
@@ -74,9 +74,9 @@ export let kanu = [
         Price: 275000,
         category: "higer_price",
         prvprice:300000,
-        dataa:"DELL Inspiron ",
-        ram:"8 gb",
-        cpu:"CORE i5 7th Gen"
+        dataa:"Gameing pc ",
+        ram:"32gb",
+        cpu:"CORE i9 13th Gen"
     }
     , {
         Name: "HP Pavilion",
@@ -94,7 +94,7 @@ export let kanu = [
         category: "low_price",
         prvprice:20000,
         dataa:"DELL Inspiron ",
-        ram:"8 gb",
+        ram:"4gb",
         cpu:"CORE i5 7th Gen"
     }
     , {
@@ -105,7 +105,7 @@ export let kanu = [
         prvprice:50000,
         dataa:"DELL Inspiron ",
         ram:"8 gb",
-        cpu:"CORE i5 7th Gen"
+        cpu:"CORE i5 10th Gen"
     }
     , {
         Name: "Hp slim elitbook",
@@ -115,7 +115,7 @@ export let kanu = [
         prvprice:30000,
         dataa:"DELL Inspiron ",
         ram:"8 gb",
-        cpu:"CORE i5 7th Gen"
+        cpu:"CORE i5 8th Gen"
     }
     , {
         Name: "Hp probook",
@@ -135,7 +135,7 @@ export let kanu = [
         prvprice:50000,
         dataa:"DELL Inspiron ",
         ram:"8 gb",
-        cpu:"CORE i5 7th Gen"
+        cpu:"CORE i5 8th Gen"
     }
     , {
         Name: "slim Hp elitbook",
@@ -145,7 +145,7 @@ export let kanu = [
         prvprice:50000,
         dataa:"DELL Inspiron ",
         ram:"8 gb",
-        cpu:"CORE i5 7th Gen"
+        cpu:"CORE i5 8th Gen"
     }
     , {
         Name: "slim Hp pavilion 2023",
@@ -155,7 +155,7 @@ export let kanu = [
         prvprice:60000,
         dataa:"DELL Inspiron ",
         ram:"8 gb",
-        cpu:"CORE i5 7th Gen"
+        cpu:"CORE i5 9th Gen"
     }
     , {
         Name: "Hp slim elitbook",
@@ -174,8 +174,8 @@ export let kanu = [
         category: "higer_price",
         prvprice:90000,
         dataa:"DELL Inspiron ",
-        ram:"8 gb",
-        cpu:"CORE i5 7th Gen"
+        ram:"8gb",
+        cpu:"CORE i7 12th Gen"
     }
     , {
         Name: "HP 2024",
@@ -193,9 +193,9 @@ export let kanu = [
         Price: 12500,
         category: "low_price",
         prvprice:15000,
-        dataa:"DELL Inspiron ",
-        ram:"8 gb",
-        cpu:"CORE i5 7th Gen"
+        dataa:"work ",
+        ram:"4 gb",
+        cpu:"CORE i5 6th Gen"
     }
     , {
         Name: "Dell precision",
@@ -204,8 +204,8 @@ export let kanu = [
         category: "higer_price",
         prvprice:100000,
         dataa:"DELL Inspiron ",
-        ram:"8 gb",
-        cpu:"CORE i5 7th Gen"
+        ram:"16gb",
+        cpu:"CORE i7 7th Gen"
     }
     , {
         Name: "Lenovo slim",
@@ -213,9 +213,9 @@ export let kanu = [
         Price: 77000,
         category: "higer_price",
         prvprice:80000,
-        dataa:"DELL Inspiron ",
+        dataa:"work ",
         ram:"8 gb",
-        cpu:"CORE i5 7th Gen"
+        cpu:"CORE i5 10th Gen"
     }
     , {
         Name: "HP slim",
@@ -225,7 +225,7 @@ export let kanu = [
         prvprice:40000,
         dataa:"DELL Inspiron ",
         ram:"8 gb",
-        cpu:"CORE i5 7th Gen"
+        cpu:"CORE i5 8th Gen"
     }
     , {
         Name: "HP Elitbook",
@@ -233,7 +233,7 @@ export let kanu = [
         Price: 37500,
         category: "medium_price",
         prvprice:40000,
-        dataa:"DELL Inspiron ",
+        dataa:"work ",
         ram:"8 gb",
         cpu:"CORE i5 7th Gen"
     }

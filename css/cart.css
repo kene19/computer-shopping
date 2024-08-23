@@ -188,4 +188,8 @@ ul li{
         height: 20px;
         right: 30px;
     }
+    ul li{
+        color: #3c3a3a;
+        font-size: 10px;
+    }
 }

@@ -30,7 +30,7 @@ for (let key of man) {
     let detial = document.createElement("div")
     detial.classList.add("detial")
     detial.innerHTML = `<ul class="ul">
-                       <li>Name ${ key.dataa}</li>
+                       <li>Type ${ key.dataa}</li>
                        <li>RAM ${ key.ram}</li>
                        <li>Pocecer ${ key.cpu}</li>
     
