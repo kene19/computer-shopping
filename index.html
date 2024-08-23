@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAT Computers</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/gh/vaakash/socializer@f4c4e9/css/socializer.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
@@ -25,7 +26,9 @@
 
                 <marquee behavior="smooths" direction="left" class="NAT">
 
-                    <h2>NAT Computers</h4>
+                    <h2 style="display: flex;"><span><img src="photo/computer.png" alt=""
+                                style="width: 20px;height: 20px;"></span> &nbsp; NAT Computers &nbsp; <span><img
+                                src="photo/computer.png" alt="" style="width: 20px;height: 20px;"></span></h2>
 
                 </marquee>
 
@@ -35,8 +38,9 @@
             </div>
 
             <div class="fliter">
-                <div style="text-align: left; width: 100%;margin-bottom: 10px; color: aliceblue; display: flex;">
-                    <h3 style="margin:0px 10px; ;">Fliter</h3>
+                <div style="text-align: left; width: 100%;margin-bottom: 10px; color: aliceblue; display: flex; ">
+                    <h3 style="margin:0px 10px;display: flex ;">Fliter &nbsp; <span><img src="photo/filter.png" alt=""
+                                style="width: 20px;height: 20px;"></span></h3>
                 </div>
                 <button class="btnkanu" onclick="filterprod('all')">All</button>
                 <button class="btnkanu" onclick="filterprod('low_price')">Low_price</button>
@@ -48,7 +52,7 @@
                 <div style="width: 95%;">
                     <div class="soc">
 
-                        <div class="socializer a sr-32px sr-circle sr-opacity sr-icon-white sr-pad" id="iconf"><span
+                        <div class="socializer a sr-20px sr-circle sr-opacity sr-icon-white sr-pad" id="iconf"><span
                                 class="sr-email"><a href="mailto:mankanu54@gmail.com" target="_blank" title="Email"><i
                                         class="fa fa-envelope"></i></a></span><span class="sr-telegram"><a
                                     href="https:/t.me/Gunners389" target="_blank" title="Telegram"><i
@@ -63,8 +67,10 @@
                 <br>
                 <div class="Address" style="width: 90%;">
 
-                    <h3 style="text-align: center;"> Address</h3>
-                    <p style="font-size: 12px; font-weight: 100; color: rgba(218, 211, 211, 0.926);">Bole Medhaniyale
+                    <h3 style="text-align: center;"><span><img src="photo/location.png" alt=""
+                                style="width: 20px;height: 20px;"></span> Address</h3>
+                    <p style="font-size: 12px; font-weight: 100; color: rgba(218, 211, 211, 0.926);text-align: center;">
+                        Bole Medhaniyale
                         Morning Star Building 1st Floor 12B No</p>
                 </div>
 
@@ -76,7 +82,9 @@
             <div class="NATcom"></div>
             <marquee behavior="smooths" direction="left" class="NAT">
 
-                <h2>NAT Computers</h4>
+                <h2 style="display: flex;"><span><img src="photo/computer.png" alt=""
+                            style="width: 20px;height: 20px;"></span> &nbsp; NAT Computers &nbsp; <span><img
+                            src="photo/computer.png" alt="" style="width: 20px;height: 20px;"></span></h4>
             </marquee>
 
         </div>
@@ -100,9 +108,17 @@
                 <div>
                     <button class="fill">Fliter</button>
                 </div>
-                <img src="photo/cart.png" alt="cart_png" width="20px" height="20px">
-                <img src="photo/notification.png" alt="cart_png" width="20px" height="20px">
-                <img src="photo/dark.png" alt="" id="icon" width="20px" height="20px">
+                <a href="#cartcard">
+                    <div class="cart">
+                        <img src="photo/cart.png" alt="cart_png" style="width: 20px;height: 20px;">
+                        <span id="count">0</span>
+                    </div>
+                </a>
+                <div class="notification">
+                    <img src="photo/notification.png" alt="cart_png" style="width: 20px;height: 20px;">
+                    <span id="not"></span>
+                </div>
+                <img src="photo/dark.png" alt="" id="icon" style="width: 20px;height: 20px;">
 
             </div>
             <div class="phonefill">
@@ -121,7 +137,7 @@
             <div style="width: 95%;">
                 <div class="soc">
 
-                    <div class="socializer a sr-32px sr-circle sr-opacity sr-icon-white sr-pad" id="iconf"><span
+                    <div class="socializer a sr-20px sr-circle sr-opacity sr-icon-white sr-pad" id="iconf"><span
                             class="sr-email"><a href="mailto:mankanu54@gmail.com" target="_blank" title="Email"><i
                                     class="fa fa-envelope"></i></a></span><span class="sr-telegram"><a
                                 href="https:/t.me/Gunners389" target="_blank" title="Telegram"><i
@@ -135,28 +151,71 @@
             </div>
             <br>
             <div class="Address" style="width: 90%;">
-                <h3 style="text-align: center;color: #fff;font-size: 13px;"><span></span> Address</h3>
+                <h3 style="text-align: center;color: #fff;font-size: 13px;"><span><img src="photo/location.png" alt=""
+                            style="width: 15px;height: 15px;"></span> Address</h3>
                 <p style="font-size: 12px; font-weight: 100; color: rgba(218, 211, 211, 0.926);text-align: center;">
                     Bole Medhaniyale Morning Star Building 1st Floor No 12B </p>
             </div>
         </div>
     </div>
+    <div class="cartcard" id="cartcard">
+        <div style="margin: 20px;color: #fff;display: flex; justify-content: center;align-items: center; width: 100%;">
+            <h1>Shopping cart &nbsp; </h1><span><img src="photo/cart.png" alt=""
+                    style="width: 30px;height: 30px;"></span>
+        </div>
 
+        <img src="photo/x.png" class="x" alt="" style="width: 25px; height: 25px;">
+        <div class="cartcardall">
+
+        </div>
+        <div class="order">
+            <p>Total Price: <span class="totalPrice"></span></p>
+            <br>
+            <p class="totalitems">Delivery fee 10%</p>
+            <a  rel="noopener noreferrer"  href="index1.html"  class="orderr"> <button type="button">order now</button></a>
+            
+        </div>
+    </div>
+    <div class="notf">
+        <h1 class="h1" style="text-align: center; margin: 10px;color: #fff;">Payment history</h1>
+        
+        <img src="photo/x.png" class="xx" alt="" style="width: 30px;height: 30px;">
+        <div class="notfadd" >
+
+        </div>
+        <button id="clearBtn">Clear history</button>
+    </div>
     <script type="module" src="js/app.js"></script>
+    
 
     <script>
 
         let icon = document.getElementById("icon");
+        let body = document.body;
 
-        icon.onclick = function () {
-            document.body.classList.toggle("dark_theme")
-            if (document.body.classList.contains("dark_theme")) {
-                icon.src = "photo/sun.png"
+
+        function applyTheme(theme) {
+            if (theme === "dark") {
+                body.classList.add("dark_theme");
+                icon.src = "photo/sun.png";
             } else {
-                icon.src = "photo/dark.png"
+                body.classList.remove("dark_theme");
+                icon.src = "photo/dark.png";
             }
-
         }
+
+
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            applyTheme(savedTheme);
+        }
+
+
+        icon.addEventListener("click", function () {
+            let currentTheme = body.classList.contains("dark_theme") ? "light" : "dark";
+            applyTheme(currentTheme);
+            localStorage.setItem('theme', currentTheme);
+        });
 
         let fill = document.querySelector(".fill")
 
@@ -169,6 +228,8 @@
             fill.classList.toggle("filladd")
 
         }
+
+
     </script>
 </body>
 

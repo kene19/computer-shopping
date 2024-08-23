@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --col4:red;
+}
+.dark_theme{
+    --col4:black;
+}
+.cart,.notification{
+    position: relative;
+    padding: 5px;
+}
+.cart #count{
+    position: absolute;
+    top:0 ;
+    right: 0;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+    background-color: var(--col4);
+    color: #fff;
+    border-radius:50% ;
+}
+.notification #not{
+    position: absolute;
+    display: none;
+    top:3px ;
+    right: 10px;
+    text-align: center;
+    font-size: 12px;
+    background-color: var(--col4);
+    color: #fff;
+    border-radius:50% ;
+    transition: all 3s;
+    animation: bl 1s linear 1s infinite alternate ;
+}
+
+
+.cartcard{
+    position: fixed;
+    
+    padding: 60px 20px 10px 20px;
+    display: none;
+    align-items:center ;
+    justify-content: center;
+    flex-direction: column;
+    inset: 0;
+    z-index: 999;
+    background-color: #0d0c22;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+}
+
+.x,.xx{
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    width: 20px;
+    height: 20px;
+    width: 30px;
+    height: 30px;
+}
+.cartcardall{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 90%;
+    border: 1px solid #fff;
+    height: 500px;
+    overflow-y: auto;
+    padding-top: 20px;
+    
+}
+.cartcarddit{
+    position: relative;
+    width: 70%;
+    height: 50px;
+    padding: 10px;
+    padding-left: 20px;
+    background-color: rgb(223, 223, 223);
+    border-bottom:1px solid #0d0c22;
+}
+.order{
+    position: relative;
+    width: 80%;
+    background-color: aliceblue;
+    height: 100px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.order button{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    padding: 5px;
+    background-color: #51ff3a;
+    color: #fff;
+}
+
+.Delete{
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.notf{
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0d0c22;
+    inset: 0;
+    z-index: 999;
+    padding: 50px 20px 20px 20px;
+    
+}
+.notfadd{
+    width: 90%;
+    height: 700px;
+    background-color: #0d0c22;
+    padding-top:20px ;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.notificationelem{
+    
+    width: 70%;
+    height: 120px;
+    padding: 15px;
+    border-bottom: 1px solid #111;
+    background-color: #fff;
+    overflow: hidden;
+}
+.kanuElement{
+    padding-left: 20px;
+}
+.manElement{
+    color: #51ff3a;
+    margin-bottom: 5px;
+}
+ul li{
+    color: #3c3a3a;
+    font-size: smaller;
+}
+#clearBtn{
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    border: none;
+    padding: 10px;
+    background-color: rgb(185, 36, 36);
+    color: #fff;
+}
+@keyframes bl {
+    from{
+     width: 0px;
+     height: 0px;
+    }
+    to{
+        width: 10px;
+        height: 10px;
+    }
+}
+@media screen and (max-width:500px) {
+    h1{
+        font-size: 20px;
+    }
+    #clearBtn{
+        padding: 7px;
+        font-size: 10px;
+    }
+    .x,.xx{
+        width: 20px;
+        height: 20px;
+        right: 30px;
+    }
+}

@@ -23,7 +23,9 @@ body {
     position: relative;
     background-color: var(--main);
     padding-bottom: 60px;
+    
 }
+
 
 .continer,
 .leftbox,
@@ -76,6 +78,7 @@ body {
     width: 80%;
     padding-bottom: 50px;
     padding-top: 140px;
+    
 
 }
 
@@ -156,23 +159,64 @@ body {
     background-color: var(--col);
     margin-bottom: 50px;
     z-index: 88;
+    transition: all 0.4s;
 }
 
 .imagecon {
+    position: relative;
     text-align: center;
     margin-bottom: 15px;
+    overflow: hidden;
+    
+}
+.ul li{
+    color: #ffffff;
+}
+.detial{
+    position: absolute;
+    z-index: 55;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    padding: 15px 10px 0px 10px;
+    text-align: left;
+    color: #c64141;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    border: 1px solid #fff;
+    transition: top 0.5s;
+    cursor: pointer;
+
 }
 
+.imagecon:hover .detial {
+    top: 0;
+}
+.detialadd{
+    top: 0;
+}
+.seemore{
+    background-color: #24224f;
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 3px;
+    border: none;
+    border-radius: 5px;
+}
 .prvprice {
     text-decoration: line-through;
     color: #ff0909;
 }
 
+
 .imgpro {
+    
     border-radius: 5%;
 }
 
 img {
+    
     max-width: 100%;
     height: 15em;
     object-fit: contain;
@@ -217,6 +261,7 @@ button {
 
 
 }
+
 
 /* From Uiverse.io by JaydipPrajapati1910 */
 
@@ -317,6 +362,9 @@ button {
 
 
 @media screen and (max-width:800px) {
+    .key_button svg path {
+       display: none;
+    }
 
     .leftbox,
     .leftboxone {
@@ -332,13 +380,16 @@ button {
 .fill{
     border-radius: 10px;
     border: 2px solid #fff;
+    transition: all 0.3s;
 }
 
     #show {
         width: 100%;
         padding-top: 150px;
     }
-
+    .ul li{
+        font-size: 9px;
+    }
     .leftboxone1 {
         display: block;
         position: fixed;
@@ -372,6 +423,7 @@ button {
         min-width: 100%;
         margin-bottom: 20px;
         overflow: hidden;
+        transition: all 0.6s;
 
     }
 
@@ -385,6 +437,7 @@ button {
 
     .gonadd {
         height: 200px;
+        transition: all 0.6;
     }
 
     .phonefill {
@@ -396,6 +449,7 @@ button {
         height: 100px;
         width: 100%;
         background-color: #1c1a1ac6;
+        transition: all 0.7s;
     }
 
     .phonefilladd {
@@ -403,7 +457,7 @@ button {
       }
 
     .gon2 {
-        margin-top: -115px;
+        /* margin-top: -115px; */
         justify-content: space-around;
     }
 
@@ -419,8 +473,8 @@ button {
     }
 
     .key_button {
-        padding: 3px 6px;
-        gap: 5px;
+        padding: 3px 3px;
+        gap: 1px;
     }
 
     .key_Name {
@@ -434,6 +488,7 @@ button {
     }
 
     .key_button .text {
+        text-align: center;
         font-size: 8px;
     }
 
@@ -463,11 +518,12 @@ button {
     }
 
     .gon1 {
-        margin-top: -15px;
+        margin-top: -35px;
+        margin-bottom: 10px;
     }
 
     .gon2 {
-        margin-top: -15px;
+        /* margin-top: -15px; */
         justify-content: space-around;
     }
 
@@ -496,8 +552,8 @@ button {
     }
 
     .key_button {
-        padding: 3px 6px;
-        gap: 5px;
+        
+        padding:1px 4px;
     }
 
     .key_Name {
@@ -511,6 +567,7 @@ button {
     }
 
     .key_button .text {
+        text-align: center;
         font-size: 8px;
     }
 }

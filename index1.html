@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAT payment</title>
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<style>
+    .con2 {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    form {
+        width: 70%;
+    }
+
+    #form,
+    .payment,
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .inpu {
+        width: 60%;
+        margin: 5px 0px;
+        padding: 5px 10px;
+        border-radius: 10px;
+        border: 2px solid black;
+    }
+
+    input,
+    button {
+        cursor: pointer;
+    }
+
+
+    #form {
+        width: 80%;
+        height: 600px;
+        background-color: aliceblue;
+        border-radius: 15px;
+
+    }
+
+    form {
+        height: 500px;
+    }
+
+    #paynow {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    #sub {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 6px;
+        color: #fff;
+        background-color: #1fff06;
+    }
+
+    @media screen and (max-width:500px) {
+        h1 {
+            font-size: 18px;
+        }
+
+        h2 {
+            font-size: 14px;
+        }
+
+        .inpu {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <div class="con1" style="display: flex;height: 100vh;">
+        <div class="con2" style="width: 100%;background-color: rgb(18, 25, 59);">
+            <div id="form">
+
+                <form action="">
+                    <h1 style="margin-bottom:20px ;text-align: center;">Delivery form</h1>
+                    <input type="text" placeholder="Full Name" name="" class="inpu inpu1" required>
+                    <input type="tel" placeholder="phone number" name="" class="inpu inpu2" required>
+                    <input type="text" placeholder="Address" name="" class="inpu inpu3" required>
+
+                    <h3 style="margin: 10px;text-align: center;">Payment methods</h3>
+                    <p>Total Price: <span class="totalPrice"></span></p>
+
+                    <p>Delivery fee 10%</p>
+                    <br>
+                    <div style="display: flex;align-items: center;justify-content: center;gap: 1em;">
+                        <input type="radio" value="telebirr" name="py" id="telebirr"  required>
+                        <label for=""><img src="photo/telebirr.png"   style="width: 40px; height: 20px;"></label>
+                        <input type="radio" value="Mpesa" name="py" id="Mpesa" required>
+                        <label for=""><img src="photo/mpesa.png" alt="" style="width: 40px; height: 20px;"></label>
+                        <input type="radio" value="cbe" name="py" id="cbe" disabled>
+                        <label for=""><img src="photo/cbe.jpg" alt="" style="width: 40px; height: 20px;"></label>
+                    </div>
+                    <br>
+
+                </form>
+                <button type="submit" id="sub" class="">pay now</button>
+            </div>
+        </div>
+        
+        <script src="js/payment.js"></script>
+        <script>
+           
+        </script>
+</body>
+
+</html>
