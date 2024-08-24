@@ -1,7 +1,8 @@
 # NAT Computers
 
-NAT Computers is an e-commerce website designed to showcase and sell various computer products. The site includes a product filtering system, a shopping cart, and a payment history section.
-open this link <a href="">NAT Computers</a>
+NAT Computers is an e-commerce website designed to showcase and sell various computer products. The site includes a product filtering system, a shopping cart, and a payment history section.</br>
+
+open this link <a href="https://kene19.github.io/computer-shopping/">NAT Computers</a>
 ## Features
 
 - **Product Listing:** Displays a variety of computer products with details like type, RAM, processor, and price.
@@ -55,6 +56,10 @@ Users can filter the displayed products by selecting one of the following option
 - CSS3: For styling the website.
 - JavaScript: For interactivity and logic (filtering, search, cart functionality).
 - FontAwesome: For icons.
+
+## images
+<img src="./photo/pc.png" alt="Logo" title="computer size" width="210" height="210">
+<img src="./photo/phone.png" alt="Logo" title="phone size" width="200" height="200">
 
 ## License
 
