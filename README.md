@@ -58,8 +58,8 @@ Users can filter the displayed products by selecting one of the following option
 - FontAwesome: For icons.
 
 ## images
-<img src="./photo/pc.png" alt="Logo" title="computer size" width="210" height="210">
-<img src="./photo/phone.png" alt="Logo" title="phone size" width="200" height="200">
+<img src="./photo/pc.png" alt="Logo" title="computer size" width="230" height="210">
+<img src="./photo/phone.png" alt="Logo" title="phone size" width="50" height="auto">
 
 ## License
 
