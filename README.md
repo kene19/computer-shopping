@@ -57,6 +57,10 @@ Users can filter the displayed products by selecting one of the following option
 - JavaScript: For interactivity and logic (filtering, search, cart functionality).
 - FontAwesome: For icons.
 
+## images
+<img src="./photo/pc.png" alt="Logo" title="computer size" width="210" height="210">
+<img src="./photo/phone.png" alt="Logo" title="phone size" width="200" height="200">
+
 ## License
 
 This project is licensed under the MIT License.
