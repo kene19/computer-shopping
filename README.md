@@ -63,4 +63,9 @@ Users can filter the displayed products by selecting one of the following option
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License.<a href="./LICENSE">see more</a> detail.
+
+
+
+
+
