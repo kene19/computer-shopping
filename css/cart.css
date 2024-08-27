@@ -82,11 +82,11 @@
 .cartcarddit{
     position: relative;
     width: 70%;
-    height: 50px;
+    height: 80px;
     padding: 10px;
     padding-left: 20px;
     background-color: rgb(223, 223, 223);
-    border-bottom:1px solid #0d0c22;
+    border-bottom:1px solid #232239;
 }
 .order{
     position: relative;

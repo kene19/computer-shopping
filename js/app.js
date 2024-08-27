@@ -59,6 +59,7 @@ for (let key of man) {
 
     let button = document.createElement("button")
     button.classList.add("key_button")
+    button.name = key.Name
     button.value = key.Price
     button.innerHTML = `<svg viewBox="0 0 16 16" class="bi bi-cart-check" height="20" width="20" xmlns="http://www.w3.org/2000/svg" fill="#fff">
   <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"></path>
@@ -152,12 +153,12 @@ let countitmes = 1;
 document.querySelectorAll(".key_button").forEach((button, index) => {
     button.addEventListener("click", () => {
         // arrr.push({ price: button.value, index: countnum });
-        arrr.push({ price: Number(button.value), index: countnum });
+        arrr.push({ price: Number(button.value),productName:(button.name) ,index: countnum });
 
         count.innerHTML = countnum++;
         let cartcarddit = document.createElement("div");
         cartcarddit.classList.add("cartcarddit");
-        cartcarddit.innerHTML = `<h4>Item ${countitmes++}</br>$${button.value}</h4>`;
+        cartcarddit.innerHTML = `<h4>Item ${countitmes++}</br>product: ${button.name}</br>price: $${button.value}</h4>`;
 
         let deleteBtn = document.createElement("span");
         deleteBtn.classList.add("Delete");
@@ -169,6 +170,7 @@ document.querySelectorAll(".key_button").forEach((button, index) => {
 
         cartcarddit.appendChild(deleteBtn);
         cartcardall.appendChild(cartcarddit);
+        
         updateTotalPrice();
     });
 });
@@ -182,10 +184,10 @@ function updateCartDisplay() {
     cartcardall.innerHTML = "";
     countnum = 1;
     countitmes = 1;
-    arrr.forEach((item, index) => {
+    arrr.forEach((item,c, index) => {
         let cartcarddit = document.createElement("div");
         cartcarddit.classList.add("cartcarddit");
-        cartcarddit.innerHTML = `<h4>Item ${countitmes++}</br>$${item.price}</h4>`;
+        cartcarddit.innerHTML = `<h4>Item ${countitmes++}</br>product: ${c.name}</br>price: $${item.price}</h4>`;
         console.log(arrr);
         let deleteBtn = document.createElement("span");
         deleteBtn.classList.add("Delete");
@@ -201,12 +203,18 @@ function updateCartDisplay() {
     });
     count.innerHTML = arrr.length;
     updateTotalPrice();
+    
 }
 
+ 
+
+               
  function updateTotalPrice() {
     let total = arrr.reduce((sum, item) => sum + item.price, 0);
+    let orderall = arrr
     totalPrice.innerHTML = `$${total}`
     localStorage.setItem('totalPrice', total);        
+    localStorage.setItem('orderall', JSON.stringify(orderall));        
 }
 
 
@@ -234,10 +242,11 @@ order.addEventListener("click",()=>{
     not.style.display = "block"
 })
 
+
 function paymenthistory() {
     
     let pp = JSON.parse(localStorage.getItem('stor'));
-  
+    
     
     if (!pp || pp.length === 0) return;
   
@@ -288,3 +297,4 @@ function paymenthistory() {
   });
 
   paymenthistory()
+  

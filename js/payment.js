@@ -2,7 +2,9 @@ let paydit = JSON.parse(localStorage.getItem('stor')) || [];
 const vidate = new Date();
 
 const storedTotal = localStorage.getItem('totalPrice');
+
 let total = document.querySelector('.totalPrice').textContent = `$${storedTotal}`;
+
 
 
 let seb = document.getElementById("sub")
@@ -37,7 +39,8 @@ sub.addEventListener("click", () => {
       Address: inpu3,
       date: cdate,
       price: total,
-      paymentMethod: paymentmetode
+      paymentMethod: paymentmetode,
+      
     });
     alert("payment successful")
     localStorage.setItem('stor', JSON.stringify(paydit));
@@ -51,15 +54,3 @@ sub.addEventListener("click", () => {
 
   }
 })
-
-
-
-
-
-
-
-
-
-
-
-
