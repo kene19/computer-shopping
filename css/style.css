@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
+html{
+    overscroll-behavior: none;
+}
 :root {
     --col: #1b1818f3;
     --main: #dededefb;
