@@ -185,6 +185,7 @@ body {
     color: #c64141;
     background-color: transparent;
     backdrop-filter: blur(20px);
+   -webkit-backdrop-filter: blur(20px);
     border-radius: 5px;
     border: 1px solid #fff;
     transition: top 0.5s;
