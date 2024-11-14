@@ -7,6 +7,9 @@
 html{
     overscroll-behavior: none;
 }
+body{
+    overscroll-behavior: none;
+}
 :root {
     --col: #1b1818f3;
     --main: #dededefb;
